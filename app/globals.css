@@ -2,26 +2,108 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.navheader{
+  padding: 30px;
+  box-shadow: 2px 2px 2px 2px gray;
+  position: fixed;
+  top: 0px;
+  width: 1600px;
+}
+/* Header.js */
+
+.homehello{
+  padding-left: 380px;
+  font-size : xx-large;
+  padding-bottom: 10px;
+}
+#homehello1{
+  margin-top: 280px;
+}
+.homeimg{
+  position: relative;
+  left: 890px;
+  bottom: 200px;
+  width: 300px;
+}
+/* page.jsx */
+
+.abouth1, .portfolioh1{
+  margin-top: 130px;
+  font-size: 60px;
+  text-align: center;
+}
+.about{
+  margin-top: 80px;
+  text-align: center;
+  font-size: 18px;
+  padding-left: 370px;
+}
+.aboutme{
+  width: 300px;
+  height: 50px;
+  display: inline-block;
+  background-color: rgb(0, 102, 51, 0.2);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+}
+.mejpg{
+  margin-bottom: -220px;
+  width: 220px;
+}
+/* about/page.jsx */
+
+.portfoliodiv{
+  text-align: center;
+}
+.project{
+  display: inline-block;
+  width: 500px;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+.project a{
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 15px;
+}
+.gitH:hover{
+  text-decoration: underline;
+  color: red;
+}
+/* portfolio/page.jsx */
+
+.teamdiv{
+  text-align: center;
+}
+.teamh1{
+  margin-top: 130px;
+  text-align: left;
+  font-size: 60px;
+  margin-left: 20px;
+}
+.teamone{
+  display: inline-block;
+  border: 1px solid black;
+  padding: 10px;
+  margin-top: 25px;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+#teamone1, #teamone2, #teamone3{
+  margin-top: 50px;
+}
+.teamone img{
+  width: 100px;
+  margin: 0 auto;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.teamproject{
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 70px;
+  
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+/* team.page.jsx */
